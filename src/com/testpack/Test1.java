@@ -4,6 +4,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.cname.core.framework.utility.Constants;
@@ -18,7 +19,6 @@ public class Test1 extends TestInitializationScript
 	@Test
 	public void searchProTest() throws Exception
 	{
-		
 		WebDriver driver = Driver.getBrowserInstance();
 		seWDriver.maximizeWindow();
 		seWDriver.setOwnWindowSize();
@@ -44,6 +44,7 @@ public class Test1 extends TestInitializationScript
 		
 		seWDriver.waitForWebElementToBoVisible("xpath", "(//img[@class='js-plp-image'])[1]");
 		
+		Assert.assertTrue(false);
 		
 	}
 }
