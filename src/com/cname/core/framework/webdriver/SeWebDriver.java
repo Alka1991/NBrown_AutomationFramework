@@ -1,17 +1,22 @@
 package com.cname.core.framework.webdriver;
 
+import java.io.File;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.io.FileHandler;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.Test;
 
 import com.cname.core.framework.utility.Constants;
 import com.cname.core.framework.utility.Global;
@@ -118,8 +123,6 @@ public class SeWebDriver
 	{
 		Select sel = select(locator, locatorValue);
 		sel.deselectAll();
-		Actions act = new Actions(Driver.driver);
-		act.
 	}
 	
 	// Action class Wrapper method
@@ -258,5 +261,20 @@ public class SeWebDriver
 		return text;
 	}
 	
+	// Capture Screenshot
+	public void caputureScreenshot(String testName)
+	{
+		try
+		{
+			TakesScreenshot ts = (TakesScreenshot)Driver.driver;
+			File source = ts.getScreenshotAs(OutputType.FILE);
+			File dest = new File("D:\\Automation_batch\\Java_program\\Phase1_MileStone2_JDW\\Screenshot\\"+testName+".jpg");
+			FileHandler.copy(source, dest);
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+	}
 	
 }

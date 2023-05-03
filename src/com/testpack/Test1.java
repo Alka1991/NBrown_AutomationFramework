@@ -16,12 +16,12 @@ import com.cname.nbrown.TestInitialization.TestInitializationScript;
 
 public class Test1 extends TestInitializationScript
 {
+
 	@Test
 	public void searchProTest() throws Exception
 	{
 		WebDriver driver = Driver.getBrowserInstance();
 		seWDriver.maximizeWindow();
-		seWDriver.setOwnWindowSize();
 		seWDriver.get();
 		seWDriver.implicitlyWait();
 		
@@ -37,14 +37,15 @@ public class Test1 extends TestInitializationScript
 			e.printStackTrace();
 		}
 		
-		WebElement searchTxtBoxWebELm = driver.findElement(FindBy.seByMechanism("name", "searchString"));
-		searchTxtBoxWebELm.sendKeys("jeans");
+		seWElm.setValue("name", "searchString", "I want to Buy Jeans");
 		
-		driver.findElement(FindBy.seByMechanism("id", "searchButton")).click();
+		
+		wb.clickOnButton("id", "searchButton");
+		
 		
 		seWDriver.waitForWebElementToBoVisible("xpath", "(//img[@class='js-plp-image'])[1]");
 		
-		Assert.assertTrue(false);
+		
 		
 	}
 }

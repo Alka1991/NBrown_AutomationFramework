@@ -7,16 +7,8 @@
         <methods>
           <include name="tearDown"/>
           <include name="searchProTest"/>
-          <include name="launchBrowser"/>
         </methods>
       </class> <!-- com.testpack.Test1 -->
-      <class name="com.testpack.Test2">
-        <methods>
-          <include name="tearDown"/>
-          <include name="m1"/>
-          <include name="launchBrowser"/>
-        </methods>
-      </class> <!-- com.testpack.Test2 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
