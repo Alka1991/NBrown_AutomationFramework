@@ -5,8 +5,13 @@ import org.testng.annotations.AfterMethod;
 
 import com.cname.core.framework.datalayer.ExcelDriver;
 import com.cname.core.framework.webcomponent.WebButton;
+import com.cname.core.framework.webcomponent.WebLink;
+import com.cname.core.framework.webcomponent.WebText;
 import com.cname.core.framework.webdriver.SeWebDriver;
 import com.cname.core.framework.webdriver.SeWebElement;
+import com.cname.nbrown.businessSpecificLib.HomePageBS_JDW;
+import com.cname.nbrown.businessSpecificLib.LoginPageBS_JDW;
+import com.cname.nbrown.objectSpecificLib.JDW_OSL;
 
 public class TestInitializationScript 
 {
@@ -14,6 +19,11 @@ public class TestInitializationScript
 	public SeWebElement seWElm = new SeWebElement();
 	public ExcelDriver excel = new ExcelDriver();
 	public WebButton wb = new WebButton();
+	public WebText wt = new WebText();
+	public WebLink wl = new WebLink();
+	public LoginPageBS_JDW lp = new LoginPageBS_JDW(); 
+	public HomePageBS_JDW hp = new HomePageBS_JDW();
+	public JDW_OSL jdwOSL = new JDW_OSL();
 	
 	
 	
