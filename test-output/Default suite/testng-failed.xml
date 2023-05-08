@@ -3,12 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.testpack.Test1">
+      <class name="com.cname.nbrown.TestScenarios.JDW.searchProduct_101_JDW_AMER">
         <methods>
           <include name="tearDown"/>
-          <include name="searchProTest"/>
+          <include name="searchProductTest"/>
         </methods>
-      </class> <!-- com.testpack.Test1 -->
+      </class> <!-- com.cname.nbrown.TestScenarios.JDW.searchProduct_101_JDW_AMER -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

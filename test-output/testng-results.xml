@@ -2,33 +2,39 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
     <line>
-      <![CDATA[We are in Electricals page]]>
+      <![CDATA[STEP1]]>
+    </line>
+    <line>
+      <![CDATA[STEP2]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="26198" started-at="2023-05-05T04:35:35Z" finished-at="2023-05-05T04:36:01Z">
+  <suite name="Default suite" duration-ms="54394" started-at="2023-05-08T03:47:19Z" finished-at="2023-05-08T03:48:14Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="26198" started-at="2023-05-05T04:35:35Z" finished-at="2023-05-05T04:36:01Z">
-      <class name="com.testpack.Test1">
-        <test-method status="PASS" signature="searchProTest()[pri:0, instance:com.testpack.Test1@48974e45]" name="searchProTest" duration-ms="26172" started-at="2023-05-05T10:05:35Z" finished-at="2023-05-05T10:06:01Z">
+    <test name="Default test" duration-ms="54394" started-at="2023-05-08T03:47:19Z" finished-at="2023-05-08T03:48:14Z">
+      <class name="com.cname.nbrown.TestScenarios.JDW.searchProduct_101_JDW_AMER">
+        <test-method status="PASS" signature="searchProductTest()[pri:0, instance:com.cname.nbrown.TestScenarios.JDW.searchProduct_101_JDW_AMER@446293d]" name="searchProductTest" duration-ms="54337" started-at="2023-05-08T09:17:20Z" finished-at="2023-05-08T09:18:14Z">
           <reporter-output>
             <line>
-              <![CDATA[We are in Electricals page]]>
+              <![CDATA[STEP1]]>
+            </line>
+            <line>
+              <![CDATA[STEP2]]>
             </line>
           </reporter-output>
-        </test-method> <!-- searchProTest -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.testpack.Test1@48974e45]" name="tearDown" is-config="true" duration-ms="2" started-at="2023-05-05T10:06:01Z" finished-at="2023-05-05T10:06:01Z">
+        </test-method> <!-- searchProductTest -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.cname.nbrown.TestScenarios.JDW.searchProduct_101_JDW_AMER@446293d]" name="tearDown" is-config="true" duration-ms="30" started-at="2023-05-08T09:18:14Z" finished-at="2023-05-08T09:18:14Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=searchProTest status=SUCCESS method=Test1.searchProTest()[pri:0, instance:com.testpack.Test1@48974e45] output=We are in Electricals page]]]>
+                <![CDATA[[TestResult name=searchProductTest status=SUCCESS method=searchProduct_101_JDW_AMER.searchProductTest()[pri:0, instance:com.cname.nbrown.TestScenarios.JDW.searchProduct_101_JDW_AMER@446293d] output=STEP1]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.testpack.Test1 -->
+      </class> <!-- com.cname.nbrown.TestScenarios.JDW.searchProduct_101_JDW_AMER -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
